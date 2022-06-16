@@ -47,31 +47,44 @@ table {
 	border-spacing: 0;
 } */
 
-/* Flexbox 
-  
-  */
+h1 {
+	text-align: center;
+	
+}
 
- /* #emojis {
+body {
+	border: 5px solid black;
+	padding: 1em;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+#emojis {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	border: 1px solid red;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 3em;
+}
 
-  } */
+.box {
+	border: 1px solid black;
+	text-align: center;
+	margin: 0.5em;
+		padding: 2em;
+}
 
-  #emojis {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	border: 1px solid red;
-  }
-
-  .emoji {
+.emoji {
 	font-size: 4em;
-  }
+}
+
+.code {
+	background-color: lightgray;
+	margin: 3px;
+}
 
 
+@media screen and (min-width:800px) {
 
-	/* @media screen and (min-width:800px) {
-
-		html {
-			font-size: 16px;
-		} */
+	#emojis {
+		display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	}
+}

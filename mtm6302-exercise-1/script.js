@@ -2,10 +2,12 @@ const $emojis =
   document.getElementById('emojis')
 const emojis = []
 
-for (let i = 129410; i < 129511; i++) {
+for (let i = 129409; i < 129511; i++) {
   emojis.push(`
-    <div class="emoji">&#${i}</div>
-    <div class="code">${i}</div> 
+    <div class="box">
+      <div class="emoji">&#${i}</div>
+      <div class="code">${i}</div> 
+    </div>
     `)
 }
 
